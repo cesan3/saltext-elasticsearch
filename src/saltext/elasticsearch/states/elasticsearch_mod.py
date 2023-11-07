@@ -25,8 +25,7 @@ def __virtual__():
             False,
             "Cannot load module elasticsearch: elasticsearch librarielastic not found",
         )
-    else:
-        return __virtualname__
+    return __virtualname__
 
 
 def index_absent(name, hosts=None, profile=None):
